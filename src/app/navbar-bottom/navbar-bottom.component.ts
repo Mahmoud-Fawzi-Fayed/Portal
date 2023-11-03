@@ -1,6 +1,4 @@
-import { Component, ElementRef, HostListener } from '@angular/core';
-// import { SharedService } from '../shared-service.service';
-import { Location } from '@angular/common';
+import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-navbar-bottom',
@@ -10,8 +8,6 @@ import { Location } from '@angular/common';
 export class NavbarBottomComponent {
   isMenuOpen = false;
   public showSubitems: { [key: string]: boolean } = {};
-
-  // constructor(private elRef: ElementRef, priva: SharedService, private location: Location) {}
 
   toggleSubitems(item: string) {
     if (this.showSubitems[item]) {
@@ -34,31 +30,4 @@ export class NavbarBottomComponent {
   closeMenu() {
     this.isMenuOpen = false;
   }
-
-  // @HostListener('document:click', ['$event'])
-  // onClickOutside(event: Event) {
-  //   if (!this.elRef.nativeElement.contains(event.target)) {
-  //     this.closeMenu();
-  //   }
-  // }
-
-  // goBack() {
-  //   this.location.back();
-  // }
-
-  // selectProgram(program: string) {
-  //   this.sharedService.setSelectedProgram(program);
-  // }
-
-  // toggleEmailActivation() {
-  //   this.sharedService.toggleEmailActivation();
-  // }
-
-  // togglePlatformExplanation() {
-  //   this.sharedService.togglePlatformExplanation();
-  // }
-
-  // toggleUniversityHousing() {
-  //   this.sharedService.toggleStudentHousing();
-  // }
 }
