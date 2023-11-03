@@ -1,0 +1,58 @@
+.navbar-medium {
+    position: fixed;
+    background-color: #6fe751;
+    left: 0;
+    right: 0;
+    top: 60px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 9999;
+    padding: 10px 20px;
+  }
+  
+  .left-logo, .right-logo {
+    height: 80px;
+    margin: auto 5px;
+    align-items: center;
+    background-repeat: no-repeat;
+  }
+  
+  .left-logo {
+    width: 200px;
+    background-image: url('/assets/images/logo.png');
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+    left: 300px;
+  }
+  
+  .right-logo {
+    width: 150px;
+    background-image: url('/assets/images/vision.gif');
+    background-size: cover;
+    position: absolute;
+    right: 350px;
+  }
+  
+  .dynamic-text {
+    text-align: center;
+    font-size: 1.5em;
+    font-weight: bold;
+    white-space: nowrap;
+    overflow: hidden;
+    width: 60%;
+    margin: 5px auto;
+    animation: typing 2s steps(30) infinite;
+  }
+  
+  @keyframes typing {
+    0%, 100% {
+      width: 0;
+    }
+    50% {
+      width: 60%;
+    }
+  }
+  

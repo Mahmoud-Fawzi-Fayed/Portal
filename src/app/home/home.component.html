@@ -1,0 +1,26 @@
+
+<div class="home-container">
+    <div class="background-image">
+    
+    <div class="carousel-container">
+      <p-carousel [value]="highlights" [numVisible]="3" [numScroll]="3" [circular]="true" [responsiveOptions]="responsiveOptions" [autoplayInterval]="3000">
+        <ng-template let-highlight pTemplate="item">
+          <div class="border-1 surface-border border-round m-2 text-center py-5 px-3">
+            <div class="mb-3">
+              <img alt='image' [src]="[ highlight.image ]" class="w-6 shadow-2" />
+            </div>
+            <div>
+              <h4 class="mb-1">{{ highlight.title }}</h4>
+              <h6 class="mt-0 mb-3">{{ highlight.date }}</h6>
+              <p>{{ highlight.description }}</p>
+              <div class="car-buttons mt-5">
+                <a [routerLink]="['/details', highlight.title]" class="p-button p-button-rounded mr-2">أقرأ المزيد</a>
+              </div>
+            </div>
+          </div>
+        </ng-template>
+      </p-carousel>
+    </div>
+  </div>
+</div>
+  

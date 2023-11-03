@@ -1,0 +1,149 @@
+<header>
+    <div class="menu">
+      <button pButton class="menu-button" type="button" (click)="toggleMenu()" aria-label="Toggle Menu">
+        <i class="pi pi-bars"></i>&nbsp;القائمة
+      </button>
+    </div>
+  
+    <nav class="nav">
+        <a [routerLink]="'/'" class="keyword">&nbsp;الرئيسية</a>
+
+        <div class="mega-dropdown">
+          <a class="keyword">&nbsp;الجامعة</a>
+          <div class="mega-dropdown-content">
+            <div class="mega-column">
+              <h2>إدارة الجامعة</h2>
+              <p-divider></p-divider>
+              <a [routerLink]="'/about'">  <i class="pi pi-fw pi-arrow-circle-left"></i>&nbsp;قطاع رئيس الجامعة</a>
+              <a [routerLink]="'/goals'"> <i class="pi pi-fw pi-arrow-circle-left"></i>&nbsp;قطاع نائب شئون التعليم والطلاب</a>
+              <a [routerLink]="'/stuff'"><i class="pi pi-fw pi-arrow-circle-left"></i>&nbsp;قطاع نائب شئون خدمة المجتمع وتنمية البيئة</a>
+              <a [routerLink]="'/Facilities'"><i class="pi pi-fw pi-arrow-circle-left"></i>&nbsp;قطاع نائب شئون الدراسات العلُيا والبحوث</a>
+              <a [routerLink]="'/Facilities'"><i class="pi pi-fw pi-arrow-circle-left"></i>&nbsp;قطاع أمين الجامعة</a>
+            </div>
+            <div class="mega-column">
+              <h2>عن الجامعة</h2>
+              <p-divider></p-divider>
+              <a [routerLink]="'/about'">  <i class="pi pi-fw pi-arrow-circle-left"></i>&nbsp;نشأة الجامعة</a>
+              <a [routerLink]="'/goals'"> <i class="pi pi-fw pi-arrow-circle-left"></i>&nbsp;رؤية الجامعة</a>
+              <a [routerLink]="'/stuff'"><i class="pi pi-fw pi-arrow-circle-left"></i>&nbsp;رسالة الجامعة</a>
+              <a [routerLink]="'/Facilities'"><i class="pi pi-fw pi-arrow-circle-left"></i>&nbsp;أهداف الجامعة</a>
+              <a [routerLink]="'/Facilities'"><i class="pi pi-fw pi-arrow-circle-left"></i>&nbsp;رؤساء الجامعة السابقين</a>
+              <a [routerLink]="'/about'">  <i class="pi pi-fw pi-arrow-circle-left"></i>&nbsp;تشكيل مجلس الجامعة</a>
+              <a [routerLink]="'/goals'"> <i class="pi pi-fw pi-arrow-circle-left"></i>&nbsp;استراتيجية الجامعة</a>
+              <a [routerLink]="'/stuff'"><i class="pi pi-fw pi-arrow-circle-left"></i>&nbsp;ميثاق الطالب الجامعي</a>
+              <a [routerLink]="'/Facilities'"><i class="pi pi-fw pi-arrow-circle-left"></i>&nbsp;مدونة سلوك وأخلاقيات الوظيفة العامة</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="mega-dropdown">
+          <a class="keyword">&nbsp;أعضاء هيئة التدريس</a>
+          <div class="mega-dropdown-content">
+            <div class="mega-column">
+              <h2>الكلية</h2>
+              <p-divider></p-divider>
+              <a [routerLink]="'/'">  <i class="pi pi-fw pi-arrow-circle-left"></i>&nbsp;بيانات الموقع الشخصي</a>
+              <a [routerLink]="'/'"> <i class="pi pi-fw pi-arrow-circle-left"></i>&nbsp;السيرة الذاتية</a>
+              <a [routerLink]="'/'"><i class="pi pi-fw pi-arrow-circle-left"></i>&nbsp;بحث عن عضو هيئة تدريس</a>
+              <a [routerLink]="'/'"><i class="pi pi-fw pi-arrow-circle-left"></i>&nbsp;خدمات إلكترونية</a>
+              <a [routerLink]="'/'"><i class="pi pi-fw pi-arrow-circle-left"></i>&nbsp;تسجيل البيانات</a>
+              <a [routerLink]="'/'">  <i class="pi pi-fw pi-arrow-circle-left"></i>&nbsp;البريد الإلكتروني</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="mega-dropdown">
+          <a class="keyword">&nbsp;الكليات</a>
+          <div class="mega-dropdown-content">
+            <div class="mega-column">
+              <h2>القطاع الهندسي</h2>
+              <p-divider></p-divider>
+              <a [routerLink]="'/'">  <i class="pi pi-fw pi-arrow-circle-left"></i>&nbsp;كلية الهندسة بشبين الكوم</a>
+              <a [routerLink]="'/'">  <i class="pi pi-fw pi-arrow-circle-left"></i>&nbsp;كلية الهندسة الإلكترونية بمنوف</a>
+              <a [routerLink]="'/'">  <i class="pi pi-fw pi-arrow-circle-left"></i>&nbsp;كليةالحاسبات والمعلومات</a>
+              <a [routerLink]="'/'">  <i class="pi pi-fw pi-arrow-circle-left"></i>&nbsp;كلية الذكاء الإصطناعي</a>
+            </div>
+            <div class="mega-column">
+              <h2>القطاع الطبي</h2>
+              <p-divider></p-divider>
+              <a [routerLink]="'/'">  <i class="pi pi-fw pi-arrow-circle-left"></i>&nbsp;الطب البشري</a>
+              <a [routerLink]="'/'">  <i class="pi pi-fw pi-arrow-circle-left"></i>&nbsp;كلية الأسنان</a>
+              <a [routerLink]="'/'">  <i class="pi pi-fw pi-arrow-circle-left"></i>&nbsp;كلية الصيدلة</a>
+              <a [routerLink]="'/'">  <i class="pi pi-fw pi-arrow-circle-left"></i>&nbsp;كلية الطب البيطري</a>
+              <a [routerLink]="'/'">  <i class="pi pi-fw pi-arrow-circle-left"></i>&nbsp;معهد الكبد</a>
+              <a [routerLink]="'/'">  <i class="pi pi-fw pi-arrow-circle-left"></i>&nbsp;المستشفيات الجامعية</a>
+            </div>
+            <div class="mega-column">
+              <h2>القطاعات</h2>
+              <p-divider></p-divider>
+              <a [routerLink]="'/'">  <i class="pi pi-fw pi-arrow-circle-left"></i>&nbsp;كلية الزراعة</a>
+              <a [routerLink]="'/'">  <i class="pi pi-fw pi-arrow-circle-left"></i>&nbsp;كلية التربية</a>
+              <a [routerLink]="'/'">  <i class="pi pi-fw pi-arrow-circle-left"></i>&nbsp;كلية التربية النوعية</a>
+              <a [routerLink]="'/'">  <i class="pi pi-fw pi-arrow-circle-left"></i>&nbsp;كلية العلوم</a>
+              <a [routerLink]="'/'">  <i class="pi pi-fw pi-arrow-circle-left"></i>&nbsp;كلية التجارة</a>
+              <a [routerLink]="'/'">  <i class="pi pi-fw pi-arrow-circle-left"></i>&nbsp;كلية الآداب</a>
+              <a [routerLink]="'/'">  <i class="pi pi-fw pi-arrow-circle-left"></i>&nbsp;كلية الحقوق</a>
+            </div>
+            <div class="mega-column">
+              <h2> الأخرى</h2>
+              <p-divider></p-divider>
+              <a [routerLink]="'/'">  <i class="pi pi-fw pi-arrow-circle-left"></i>&nbsp;كلية الإقتصاد المنزلي</a>
+              <a [routerLink]="'/'">  <i class="pi pi-fw pi-arrow-circle-left"></i>&nbsp;كلية التمريض</a>
+              <a [routerLink]="'/'">  <i class="pi pi-fw pi-arrow-circle-left"></i>&nbsp;كلية التربية الرياضية</a>
+              <a [routerLink]="'/'">  <i class="pi pi-fw pi-arrow-circle-left"></i>&nbsp;كلية الإعلام</a>
+              <a [routerLink]="'/'">  <i class="pi pi-fw pi-arrow-circle-left"></i>&nbsp;كلية تكنولوجيا العلوم الصحية التطبيقية</a>
+              <a [routerLink]="'/'">  <i class="pi pi-fw pi-arrow-circle-left"></i>&nbsp;كلية التربية للطفولة المبكرة</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="mega-dropdown">
+          <a class="keyword">&nbsp;الجامعات المصرية</a>
+          <div class="mega-dropdown-content">
+            <div class="mega-column">
+              <h2>الكلية</h2>
+              <p-divider></p-divider>
+              <a [routerLink]="'/'">  <i class="pi pi-fw pi-arrow-circle-left"></i>&nbsp;جامعة القاهرة</a>
+              <a [routerLink]="'/'"> <i class="pi pi-fw pi-arrow-circle-left"></i>&nbsp;جامعة حلوان</a>
+              <a [routerLink]="'/'"><i class="pi pi-fw pi-arrow-circle-left"></i>&nbsp;جامعة طنطا</a>
+              <a [routerLink]="'/'"><i class="pi pi-fw pi-arrow-circle-left"></i>&nbsp;جامعة عين شمس</a>
+              <a [routerLink]="'/'"><i class="pi pi-fw pi-arrow-circle-left"></i>&nbsp;جلمعة الزقازيق</a>
+            </div>
+            <div class="mega-column">
+              <h2>الكلية</h2>
+              <p-divider></p-divider>
+              <a [routerLink]="'/'">  <i class="pi pi-fw pi-arrow-circle-left"></i>&nbsp;جامعة المنصورة</a>
+              <a [routerLink]="'/'"> <i class="pi pi-fw pi-arrow-circle-left"></i>&nbsp;جامعة الفيوم</a>
+              <a [routerLink]="'/'"><i class="pi pi-fw pi-arrow-circle-left"></i>&nbsp;جامعة الإسكندرية</a>
+              <a [routerLink]="'/'"><i class="pi pi-fw pi-arrow-circle-left"></i>&nbsp;جامعة كفر الشيخ</a>
+              <a [routerLink]="'/'"><i class="pi pi-fw pi-arrow-circle-left"></i>&nbsp;جامعة جنوب الوادي</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="mega-dropdown">
+          <a class="keyword">&nbsp;الإعلام الجامعى</a>
+          <div class="mega-dropdown-content">
+            <div class="mega-column">
+              <p-divider></p-divider>
+              <a [routerLink]="'/'">  <i class="pi pi-fw pi-arrow-circle-left"></i>&nbsp;قناة الجامعة على YouTube</a>
+              <a [routerLink]="'/'"> <i class="pi pi-fw pi-arrow-circle-left"></i>&nbsp;نشرات الجامعة</a>
+              <a [routerLink]="'/'"><i class="pi pi-fw pi-arrow-circle-left"></i>&nbsp;جامعة المنوفية فى الصحافة</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="mega-dropdown">
+          <a class="keyword">&nbsp;أخرى</a>
+          <div class="mega-dropdown-content">
+            <div class="mega-column">
+              <p-divider></p-divider>
+              <a [routerLink]="'/'">  <i class="pi pi-fw pi-arrow-circle-left"></i>&nbsp;مؤتمر التحول نحو الأخضر</a>
+              <a [routerLink]="'/'"> <i class="pi pi-fw pi-arrow-circle-left"></i>&nbsp;المتدربين</a>
+              <a [routerLink]="'/'"><i class="pi pi-fw pi-arrow-circle-left"></i>&nbsp;التحول الرقمي</a>
+              <a [routerLink]="'/'"><i class="pi pi-fw pi-arrow-circle-left"></i>&nbsp;أرشيف الأخبار</a>
+            </div>
+          </div>
+        </div>
+    </nav>
+  </header>

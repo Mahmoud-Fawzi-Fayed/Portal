@@ -1,3 +1,6 @@
+*{
+  direction: rtl;
+}
 body {
   margin: 0;
   padding: 0;
@@ -51,9 +54,9 @@ label {
   font-weight: bold;
   display: flex;
   align-items: center;
-  margin-left: 11%;
+  margin-right: 11%;
   i{
-    margin-right: 5px
+    margin-left: 5px;
   }
 }
 
