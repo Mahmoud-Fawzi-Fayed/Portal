@@ -1,0 +1,29 @@
+<body *ngIf="!authService.isLoggedIn()">
+    <div class="flex-container">
+
+        <div class="login-container" >
+            <h2>Login</h2>
+            <form [formGroup]="loginForm" (ngSubmit)="onSubmit()">
+                <div class="form-group">
+                    <label for="email"><i class="fas fa-envelope"></i> Email:</label>
+                    <input type="email" id="email" name="email" formControlName="email" required
+                        placeholder="name@collage.menofia.edu.eg" value="name@collage.menofia.edu.eg" />
+                </div>
+                <div class="form-group">
+                    <label for="password"><i class="fas fa-lock"></i> Password:</label>
+                    <input type="password" id="password" name="password" formControlName="password" required
+                        placeholder="password" value="password" />
+                </div>
+                <button type="submit"><i class="fas fa-sign-in-alt"></i> Login</button>
+                <div class="error-message" *ngIf="loginForm.hasError('emptyFields')">Please fill in all fields.</div>
+                <div class="error-message" *ngIf="loginForm.hasError('incorrectCredentials')">Incorrect email or password.</div>
+            </form>
+        </div>
+
+        <div class="photo-container">
+            <img src="../../assets/13_prev_ui.png" alt="">
+        </div>
+
+    </div>
+</body>
+<app-student-details *ngIf="authService.isLoggedIn()"></app-student-details>
