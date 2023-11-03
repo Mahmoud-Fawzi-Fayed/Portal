@@ -1,0 +1,58 @@
+.navbar-top {
+    padding: 10px 20px;
+    position: fixed;
+    background-color: rgb(81, 231, 229);
+    left: 0;
+    right: 0;
+    top: 0;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 9999;
+  }
+  
+  .left-section {
+    display: flex;
+    align-items: center;
+  }
+  
+  .right-section {
+    display: flex;
+    align-items: center;
+  }
+  
+  .login-field,
+  .search-field,
+  .phone-icon {
+    margin: auto 5px;
+  }
+  
+  .logo {
+    display: flex;
+  }
+  
+  .logo img {
+    width: 60px; /* Adjust the width of your logo images */
+    margin-right: 10px; /* Add margin between logos */
+  }
+  
+  .languages {
+    display: flex;
+    align-items: center;
+  }
+  
+  .languages span {
+    margin-right: 5px; /* Add margin between language buttons */
+  }
+  
+  .delimiter {
+    height: 30px; /* Adjust the height of your delimiter */
+    width: 2px; /* Adjust the width of your delimiter */
+    background-color: #000000; /* Add your desired delimiter color */
+    margin: 0 15px; /* Add margin between delimiter and language buttons */
+  }
+  
+.phone-icon i {
+    font-size: 36px;
+}
