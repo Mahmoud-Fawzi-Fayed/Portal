@@ -11,6 +11,11 @@ import { NavbarTopComponent } from './navbar-top/navbar-top.component';
 import { NavbarMediumComponent } from './navbar-medium/navbar-medium.component';
 import { NavbarBottomComponent } from './navbar-bottom/navbar-bottom.component';
 import { InputTextModule } from 'primeng/inputtext';
+import { LoginComponent } from './login/login.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
+import { StudentDetailsComponent } from './student-details/student-details.component';
+
 
 @NgModule({
   declarations: [
@@ -18,11 +23,14 @@ import { InputTextModule } from 'primeng/inputtext';
     HomeComponent,
     NavbarTopComponent,
     NavbarMediumComponent,
-    NavbarBottomComponent
+    NavbarBottomComponent,
+    LoginComponent,
+    StudentDetailsComponent,
+
   ],
   imports: [
     BrowserModule, AppRoutingModule, DividerModule, CarouselModule, TagModule, InputTextModule,
-    ButtonModule
+    ButtonModule, FormsModule, ReactiveFormsModule, HttpClientModule, 
   ],
   providers: [],
   bootstrap: [AppComponent]

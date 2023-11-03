@@ -1,16 +1,20 @@
 <body *ngIf="!authService.isLoggedIn()">
+    <div class="logo-container">
+        <img src="assets/Uni-logo.png" alt="University Logo">
+    </div>
+
     <div class="flex-container">
 
         <div class="login-container" >
-            <h2>Login</h2>
+            <h2>تسجيل الدخول</h2>
             <form [formGroup]="loginForm" (ngSubmit)="onSubmit()">
                 <div class="form-group">
-                    <label for="email"><i class="fas fa-envelope"></i> Email:</label>
+                    <label for="email"><i class="fas fa-envelope"></i>الايميل الاكاديمي</label>
                     <input type="email" id="email" name="email" formControlName="email" required
                         placeholder="name@collage.menofia.edu.eg" value="name@collage.menofia.edu.eg" />
                 </div>
                 <div class="form-group">
-                    <label for="password"><i class="fas fa-lock"></i> Password:</label>
+                    <label for="password"><i class="fas fa-lock"></i>كلمة المرور</label>
                     <input type="password" id="password" name="password" formControlName="password" required
                         placeholder="password" value="password" />
                 </div>
@@ -21,7 +25,7 @@
         </div>
 
         <div class="photo-container">
-            <img src="../../assets/13_prev_ui.png" alt="">
+            <img src="../../assets/_Pngtree_2_5d_learn_know_how_4117072-removebg-preview.png" alt="">
         </div>
 
     </div>
