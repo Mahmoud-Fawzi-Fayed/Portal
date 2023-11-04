@@ -8,6 +8,7 @@ body {
   background-repeat: no-repeat;
   background-attachment: fixed;
   height: 100vh;
+  // background-color: #00b32446;
   overflow: hidden;
   display: flex;
   justify-content: center;
@@ -20,8 +21,9 @@ body {
   justify-content:space-evenly;
   align-items: center;
   width: 100%;
-  max-width: 1200px;
+  max-width: 1350px;
   padding: 0 20px;
+  margin-top: 300px;
 }
 
 .login-container {
@@ -30,7 +32,7 @@ body {
   border: 1px solid #ccc;
   border-radius: 20px;
   background-color: rgba(255, 255, 255, 0.358);
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.347);
+  box-shadow: 0 2px 4px rgba(0, 128, 0, 0.6);
   max-width: 400px;
   flex: 1;
 }
