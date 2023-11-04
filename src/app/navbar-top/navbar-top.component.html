@@ -3,43 +3,55 @@
         <div class="logo">
             <div>
                 <a>
-                    <img src="../../assets/images/menofia.png" alt="" />
+                  <img src="../../assets/images/menofia.png" alt="">
                 </a>
             </div>
         </div>
-    <div class="languages">
-        <span>AR</span>
-        <div class="delimiter"></div>
-        <span>EN</span>
-        <div class="delimiter"></div>
-        <span>FR</span>
-    </div>
-    <div class="logo">
-        <div>
-            <a>
-                <img src="../../assets/images/egypt.png" alt="" />
-            </a>
+        <!-- <div class="languages">
+            <span>AR</span>
+            <div class="delimiter"></div>
+            <span>EN</span>
+            <div class="delimiter"></div>
+            <span>FR</span>
+        </div> -->
+        <p-selectButton [options]="languageOptions" [(ngModel)]="selectedLanguages" optionLabel="label" optionValue="value" [multiple]="true"></p-selectButton>
+
+        <div class="logo">
+            <div>
+                <a>
+                  <img src="../../assets/images/egypt.png" alt="">
+                </a>
+            </div>
         </div>
     </div>
+
+    <div class="medium-section">
+        <div class="left-logo"></div>
+        <div class="dynamic-text">
+          {{ dynamicText }}
+        </div>
+        <div class="right-logo"></div>
     </div>
+  
+      
     <div class="right-section">
-    <div class="login-field">
-        <p-button routerLink="/login" label="تسجيل الدخول" [rounded]="true"></p-button>
+        <div class="login-field">
+            <p-button label="تسجيل الدخول" [rounded]="true"></p-button>
+        </div>
+        <div class="search-field">
+            <div class="search">
+                <form>
+                  <div class="p-inputgroup">
+                    <button type="submit" pButton aria-label="Search">
+                        <i class="pi pi-search" style="font-size: 1rem"></i>
+                    </button>                    
+                  </div>
+                </form>
+            </div>
+        </div>
+        <div class="phone-icon">
+            <i class="pi pi-fw pi-mobile"></i>
+        </div>
     </div>
-    <div class="search-field">
-      <div class="search">
-        <form>
-          <div class="p-inputgroup">
-            <button type="submit" pButton aria-label="Search">
-              <i class="pi pi-search" style="font-size: 1rem"></i>
-            </button>
-            <input pInputText placeholder="Search" style="font-size: 0.75rem" />
-          </div>
-        </form>
-      </div>
-    </div>
-    <div class="phone-icon">
-      <i class="pi pi-fw pi-mobile"></i>
-    </div>
-  </div>
 </div>
+  
