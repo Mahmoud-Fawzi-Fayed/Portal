@@ -1,10 +1,37 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-navbar-top',
   templateUrl: './navbar-top.component.html',
   styleUrls: ['./navbar-top.component.scss']
 })
-export class NavbarTopComponent {
 
-}
+export class NavbarTopComponent implements OnInit {
+    dynamicTextOptions: string[] = [
+      "مرحباً بكم فى جامعة المنوفية",
+      "منارة العلم في قلب الدلتا",
+      "منبع القادة وأصحاب الفكر",
+      ];
+
+    languageOptions = [
+      { label: 'AR', value: 'ar' },
+      { label: 'EN', value: 'en' },
+      { label: 'FR', value: 'fr' }
+      // Add more languages as needed
+    ];
+  
+    selectedLanguages: string[] = [];
+    dynamicText: string = this.dynamicTextOptions[0];
+  
+    constructor() { }
+  
+    ngOnInit(): void {
+      setInterval(() => this.updateDynamicText(), 2000);
+    }
+  
+    updateDynamicText() {
+      const currentIndex = this.dynamicTextOptions.indexOf(this.dynamicText);
+      const nextIndex = (currentIndex + 1) % this.dynamicTextOptions.length;
+      this.dynamicText = this.dynamicTextOptions[nextIndex];
+    }
+  }

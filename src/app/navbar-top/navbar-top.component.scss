@@ -1,23 +1,20 @@
 .navbar-top {
     padding: 10px 20px;
     position: fixed;
-    background-color: rgb(81, 231, 229);
+    background-color: #8cfc70;
     left: 0;
     right: 0;
     top: 0;
-    height: 60px;
+    height: 100px;
     display: flex;
     align-items: center;
     justify-content: space-between;
     z-index: 9999;
   }
   
-  .left-section {
-    display: flex;
-    align-items: center;
-  }
-  
-  .right-section {
+  .left-section,
+  .right-section,
+  .medium-section {
     display: flex;
     align-items: center;
   }
@@ -34,7 +31,7 @@
   
   .logo img {
     width: 60px;
-    margin-right: 10px;
+    margin: 5px;
   }
   
   .languages {
@@ -43,16 +40,67 @@
   }
   
   .languages span {
-    margin-right: 5px;
+    margin: 5px;
   }
   
   .delimiter {
     height: 30px;
-    width: 2px;
+    width: 1px;
     background-color: #000000;
-    margin: 0 15px;
+    margin: 5px;
   }
   
 .phone-icon i {
     font-size: 36px;
+}
+
+.left-logo, .right-logo {
+  height: 80px;
+  margin: auto 5px;
+  align-items: center;
+  background-repeat: no-repeat;
+}
+
+.left-logo {
+  width: 200px;
+  background-image: url('/assets/images/logo.png');
+  background-position: center;
+  background-size: cover;
+  position: absolute;
+  left: 350px;
+  margin-right: 0;
+}
+
+.right-logo {
+  width: 150px;
+  background-image: url('/assets/images/vision.gif');
+  background-size: cover;
+  position: absolute;
+  right: 300px;
+  margin-left: 0;
+}
+
+.medium-section {
+  width: 450px;
+}
+
+.dynamic-text {
+  text-align: center;
+  font-size: 1.5em;
+  font-weight: bold;
+  white-space: nowrap;
+  overflow: hidden;
+  width: 100%;
+  margin: 5px auto;
+  animation: typing 2s steps(30) infinite;
+}
+
+
+@keyframes typing {
+  0%, 100% {
+    width: 0;
+  }
+  50% {
+    width: 60%;
+  }
 }
