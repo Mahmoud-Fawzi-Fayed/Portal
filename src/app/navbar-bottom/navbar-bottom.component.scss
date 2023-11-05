@@ -5,7 +5,7 @@
 header {
     padding: 10px 20px;
     position: fixed;
-    background-color: rgb(81, 231, 229);
+    background-color: #6cdfcc;
     left: 0;
     right: 0;
     top: 100px;
@@ -14,8 +14,8 @@ header {
     align-items: center;
     justify-content: space-between;
     z-index: 9999;
-    border-top: 2px solid black;
-    border-bottom: 2px solid black;
+    border-top: 2px solid rgb(8, 134, 118);
+    border-bottom: 2px solid rgb(8, 134, 118);
 }
 
 .nav {
@@ -36,7 +36,7 @@ header {
 }
 
 .keyword {
-    color: #000;
+    color: #02463a;
     text-decoration: none;
     margin: 0 10px;
     position: relative;
@@ -46,12 +46,13 @@ header {
   }
 
 .keyword:hover {
-    background-color: rgba(71, 129, 229, 0.879);
+    background-color: rgba(8, 134, 117, 0.384);
+
 }
 
 .nav a i {
     margin-right: 5px;
-    font-size: 20px;    
+    font-size: 20px;
 }
 
 .center-content {
@@ -94,9 +95,9 @@ header {
     top: 100%;
     border-radius: 4px;
     flex-direction: row;
-    color: #333;
+    color: rgb(21, 228, 200);
     margin-top: 5px;
-    background-color: #6fe751;
+    background-color: rgb(7, 105, 92);
     left: 50%;
     transform: translateX(-50%);
     width: auto;
@@ -121,7 +122,7 @@ header {
 
 .mega-column a {
     display: block;
-    color: #333;
+    color: rgb(140, 209, 199);
     text-decoration: none;
     font-size: 16px;
     direction: rtl;
@@ -137,7 +138,7 @@ header {
     position: relative;
     top: 0;
     min-width: 150px;
-    background-color: rgb(81, 231, 229);
+    background-color: rgb(49, 194, 191);
     border: 1px solid #ccc;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     margin: 0;

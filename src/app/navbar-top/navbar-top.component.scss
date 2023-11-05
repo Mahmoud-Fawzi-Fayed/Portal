@@ -1,7 +1,7 @@
 .navbar-top {
   padding: 10px 20px;
   position: fixed;
-  background-color: #8cfc70;
+  background-color: #65c9b8;
   left: 0;
   right: 0;
   top: 0;
@@ -24,6 +24,8 @@
 .phone-icon {
   margin: auto 5px;
 }
+
+
 
 .logo {
   display: flex;
@@ -67,7 +69,7 @@ background-image: url('/assets/images/logo.png');
 background-position: center;
 background-size: cover;
 position: absolute;
-left: 350px;
+left: 43%;
 margin-right: 0;
 }
 
@@ -80,9 +82,9 @@ right: 300px;
 margin-left: 0;
 }
 
-.medium-section {
-width: 450px;
-}
+// .medium-section {
+// width: 450px;
+// }
 
 .dynamic-text {
 text-align: center;
@@ -103,4 +105,9 @@ animation: typing 2s steps(30) infinite;
 50% {
   width: 60%;
 }
+}
+.p-button-label
+{
+  color: rgb(255, 255, 255);
+  background-color: red;
 }
