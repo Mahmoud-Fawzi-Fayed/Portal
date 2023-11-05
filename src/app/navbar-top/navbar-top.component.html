@@ -1,23 +1,19 @@
 <div class="navbar-top">
   <div class="left-section">
-    <div class="logo">
-      <div>
-        <a>
-          <img src="../../assets/images/menofia.png" alt="">
-        </a>
-      </div>
-    </div>
+
     <p-selectButton
       [options]="languageOptions"
       [(ngModel)]="selectedLanguages"
       optionLabel="label"
       optionValue="value"
-      [multiple]="true">
+      class="Lang"
+      >
     </p-selectButton>
+
     <div class="logo">
       <div>
         <a>
-          <img src="../../assets/images/egypt.png" alt="">
+          <img src="../../assets/images/egypt.png" alt="" class="logo">
         </a>
       </div>
     </div>
@@ -33,21 +29,18 @@
 
   <div class="right-section">
     <div class="login-field">
-      <p-button routerLink="login" label="تسجيل الدخول" [rounded]="true"></p-button>
+      <p-button class="login" routerLink="login" label="تسجيل الدخول" [rounded]="true" ></p-button>
     </div>
     <div class="search-field">
       <div class="search">
         <form>
           <div class="p-inputgroup">
-            <button type="submit" pButton aria-label="Search">
-              <i class="pi pi-search" style="font-size: 1rem"></i>
+            <button type="submit" pButton aria-label="Search" class="bu-searsh">
+              <i  class="pi pi-search"></i>
             </button>
           </div>
         </form>
       </div>
-    </div>
-    <div class="phone-icon">
-      <i class="pi pi-fw pi-mobile"></i>
     </div>
   </div>
 </div>

@@ -5,7 +5,7 @@
 header {
     padding: 10px 20px;
     position: fixed;
-    background-color: rgb(81, 231, 229);
+    background-color: whitesmoke;
     left: 0;
     right: 0;
     top: 100px;
@@ -43,15 +43,11 @@ header {
     padding: 10px 15px;
     font-size: 18px;
     font-weight: bold;
-  }
-
-.keyword:hover {
-    background-color: rgba(71, 129, 229, 0.879);
 }
 
 .nav a i {
     margin-right: 5px;
-    font-size: 20px;    
+    font-size: 20px;
 }
 
 .center-content {
@@ -96,7 +92,7 @@ header {
     flex-direction: row;
     color: #333;
     margin-top: 5px;
-    background-color: #6fe751;
+    background-color:rgb(255, 248, 236);
     left: 50%;
     transform: translateX(-50%);
     width: auto;
@@ -130,14 +126,13 @@ header {
 }
 
 .mega-column a:hover {
-    color: white;
+    color: rgb(120, 83, 83);
 }
 
 .subsubitem-container {
     position: relative;
     top: 0;
     min-width: 150px;
-    background-color: rgb(81, 231, 229);
     border: 1px solid #ccc;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     margin: 0;

@@ -1,0 +1,14 @@
+[debug] [2023-11-05T19:03:23.399Z] ----------------------------------------------------------------------
+[debug] [2023-11-05T19:03:23.403Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\dell\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2023-11-05T19:03:23.403Z] CLI Version:   12.8.0
+[debug] [2023-11-05T19:03:23.404Z] Platform:      win32
+[debug] [2023-11-05T19:03:23.404Z] Node Version:  v18.17.0
+[debug] [2023-11-05T19:03:23.405Z] Time:          Sun Nov 05 2023 21:03:23 GMT+0200 (Eastern European Standard Time)
+[debug] [2023-11-05T19:03:23.405Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2023-11-05T19:03:23.532Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-11-05T19:03:23.534Z] > authorizing via signed-in user (mahmoud.fawzy11122@gmail.com)
+[debug] [2023-11-05T19:03:23.534Z] [iam] checking project menoufia-university for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2023-11-05T19:03:23.538Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/menoufia-university:testIamPermissions [none]
+[debug] [2023-11-05T19:03:23.538Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/menoufia-university:testIamPermissions x-goog-quota-user=projects/menoufia-university
+[debug] [2023-11-05T19:03:23.538Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/menoufia-university:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
