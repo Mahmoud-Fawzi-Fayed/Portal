@@ -12,13 +12,15 @@ import { NavbarBottomComponent } from './navbar-bottom/navbar-bottom.component';
 import { InputTextModule } from 'primeng/inputtext';
 import { SelectButtonModule } from 'primeng/selectbutton';
 import { FormsModule } from '@angular/forms';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
     NavbarTopComponent,
-    NavbarBottomComponent
+    NavbarBottomComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule, AppRoutingModule, DividerModule, CarouselModule, TagModule, InputTextModule,
