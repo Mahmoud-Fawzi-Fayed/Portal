@@ -15,6 +15,7 @@ interface Column {
 interface MenuItem {
   label: string;
   columns: Column[];
+  link?: string;
 }
 
 @Component({
@@ -32,8 +33,8 @@ export class NavbarBottomComponent {
 
     {
       label: 'الرئيسية',
-      columns: [
-      ]
+      columns: [],
+      link : '/'
     },
 
     {
@@ -291,6 +292,7 @@ export class NavbarBottomComponent {
     },
   ];
 
+  
   
   private hideSubsubitemsTimeout: any;
 

@@ -8,6 +8,7 @@ import { StudentDetailsComponent } from './student-details/student-details.compo
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
+  { path: 'home', component: HomeComponent },
   { path: 'navbar-top', component: NavbarTopComponent },
   { path: 'navbar-bottom', component: NavbarBottomComponent },
   { path: 'login', component: LoginComponent },
