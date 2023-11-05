@@ -12,15 +12,14 @@ export class NavbarTopComponent implements OnInit {
       "منارة العلم في قلب الدلتا",
       "منبع القادة وأصحاب الفكر",
       ];
-
+      selectedLanguages: string[] = ['ar']; 
     languageOptions = [
       { label: 'AR', value: 'ar' },
       { label: 'EN', value: 'en' },
       { label: 'FR', value: 'fr' }
-      // Add more languages as needed
+
     ];
   
-    selectedLanguages: string[] = [];
     dynamicText: string = this.dynamicTextOptions[0];
   
     constructor() { }
