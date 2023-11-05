@@ -8,13 +8,13 @@ import { CarouselModule } from 'primeng/carousel';
 import { TagModule } from 'primeng/tag';
 import { ButtonModule } from 'primeng/button';
 import { NavbarTopComponent } from './navbar-top/navbar-top.component';
-import { NavbarMediumComponent } from './navbar-medium/navbar-medium.component';
 import { NavbarBottomComponent } from './navbar-bottom/navbar-bottom.component';
 import { InputTextModule } from 'primeng/inputtext';
 import { LoginComponent } from './login/login.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { StudentDetailsComponent } from './student-details/student-details.component';
+import { SelectButtonModule } from 'primeng/selectbutton';
 
 
 @NgModule({
@@ -22,7 +22,6 @@ import { StudentDetailsComponent } from './student-details/student-details.compo
     AppComponent,
     HomeComponent,
     NavbarTopComponent,
-    NavbarMediumComponent,
     NavbarBottomComponent,
     LoginComponent,
     StudentDetailsComponent,
@@ -30,7 +29,7 @@ import { StudentDetailsComponent } from './student-details/student-details.compo
   ],
   imports: [
     BrowserModule, AppRoutingModule, DividerModule, CarouselModule, TagModule, InputTextModule,
-    ButtonModule, FormsModule, ReactiveFormsModule, HttpClientModule, 
+    ButtonModule, FormsModule, ReactiveFormsModule, HttpClientModule, SelectButtonModule
   ],
   providers: [],
   bootstrap: [AppComponent]
