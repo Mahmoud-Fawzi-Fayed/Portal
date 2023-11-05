@@ -15,13 +15,17 @@
               <h2>{{ column.label }}</h2>
               <p-divider></p-divider>
               <ng-container *ngFor="let subsubitem of column.subsubitems">
-                <div class="subsubitem"
-                    (mouseenter)="toggleSubsubitems(subsubitem.label, subsubitem)"
-                    (mouseleave)="toggleSubsubitems(subsubitem.label, subsubitem)">
-                  <a [routerLink]="subsubitem.link">&nbsp;{{ subsubitem.label }}</a>
-                </div>
+              <div class="subsubitem"
+                (mouseenter)="toggleSubsubitems(subsubitem.label, subsubitem)"
+                (mouseleave)="toggleSubsubitems(subsubitem.label, subsubitem)">
+                <a [routerLink]="subsubitem.link">
+                  <span>{{ subsubitem.label }}</span>
+                  <i *ngIf="subsubitem.subsubitems" class="pi pi-caret-down"></i>
+                </a>
+              </div>
 
                 <div *ngIf="subsubitem.subsubitems && subsubitem.subsubitems.length > 0" class="subsubitem-container" [ngClass]="{'active': isSubsubitemActive(subsubitem.label)}">
+                  <i class="fas fa-chevron-down"></i>
                   <ng-container *ngFor="let subsubsubitem of subsubitem.subsubitems">
                     <a [routerLink]="subsubsubitem.link">&nbsp;{{ subsubsubitem.label }}</a>
                   </ng-container>

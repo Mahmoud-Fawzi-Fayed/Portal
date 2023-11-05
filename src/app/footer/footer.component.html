@@ -1,6 +1,7 @@
 <footer class="footer">
     <div class="footer-column">
       <img src="assets/images/logo.jpg" alt="Logo">
+      <h1>تواصل معنا</h1>
       <div class="social-icons">
         <a href="#"><i class="pi pi-facebook"></i></a>
         <a href="#"><i class="pi pi-twitter"></i></a>
@@ -9,7 +10,7 @@
     </div>
 
     <div *ngFor="let column of footerData" class="footer-column">
-      <h3>{{ column.title }}</h3>
+      <h2>{{ column.title }}</h2>
       <ul>
         <li *ngFor="let item of column.items">
           <a [href]="item.link">{{ item.label }}</a>
