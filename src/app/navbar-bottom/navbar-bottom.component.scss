@@ -2,6 +2,10 @@
     direction: rtl;
 }
 
+body{
+    font-family: "Roboto Mono", monospace;
+}
+
 header {
     padding: 10px 20px;
     position: fixed;
@@ -31,7 +35,6 @@ header {
     text-decoration: none;
     margin: 0 15px;
     font-size: 20px;
-    font-family: 'Almarai';
     font-weight: bold;
 }
 
@@ -67,7 +70,6 @@ header {
     flex-direction: column;
     align-items: center;
     font-size: 18px;
-    font-family: 'Almarai';
 }
 
 .logo-text span {
@@ -83,30 +85,34 @@ header {
 
 .mega-dropdown-content,
 .subsubitem-container {
-    text-align: center;
     position: absolute;
-    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.4);
     z-index: 1;
     top: 100%;
     border-radius: 4px;
     flex-direction: row;
     color: #333;
     margin-top: 5px;
-    background-color:rgb(255, 248, 236);
+    background-color: whitesmoke;
     left: 50%;
     transform: translateX(-50%);
     width: auto;
     display: none;
 }
 
+.subsubitem:hover .subsubitem-container {
+    display: block;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.5);
+    text-align: center;
+}
+
 .mega-column {
     flex: 1;
     padding: 20px;
-    width: 200px;
+    width: 340px;
     display: inline-block;
     vertical-align: top;
     margin-right: 10px;
-    text-align: center;
 }
 
 .mega-column h2 {
@@ -121,12 +127,11 @@ header {
     text-decoration: none;
     font-size: 16px;
     direction: rtl;
-    text-align: center;
     margin: 15px auto;
 }
 
 .mega-column a:hover {
-    color: rgb(120, 83, 83);
+    color: darkblue;
 }
 
 .subsubitem-container {
@@ -183,4 +188,5 @@ header {
 .arrow {
     display: none;
 }
+
 

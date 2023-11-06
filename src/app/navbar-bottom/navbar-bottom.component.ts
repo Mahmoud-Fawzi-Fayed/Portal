@@ -3,8 +3,8 @@ import { Component } from '@angular/core';
 interface Subsubitem {
   label: string;
   link?: string;
-  subsubitems?: Subsubitem[];
   icon?: string;
+  subsubitems?: Subsubitem[];
 }
 
 interface Column {
@@ -24,10 +24,6 @@ interface MenuItem {
   styleUrls: ['./navbar-bottom.component.scss']
 })
 export class NavbarBottomComponent {
-  isMenuOpen = false;
-  public showSubitems: { [key: string]: boolean } = {};
-  public hoveredSubitem: Subsubitem | null = null;
-  public showSubsubitemContainer: { [key: string]: boolean } = {};
 
   menuItems: MenuItem[] = [
 
@@ -100,7 +96,6 @@ export class NavbarBottomComponent {
             {label: 'كلية الهندسة الإلكترونية بمنوف', link: '/' , icon: 'pi pi-fw pi-arrow-circle-left' },
             {label: 'كلية الحاسبات والمعلومات', link: '/' , icon: 'pi pi-fw pi-arrow-circle-left' },
             {label: 'كلية الذكاء الإصطناعي', link: '/' , icon: 'pi pi-fw pi-arrow-circle-left' },
-            {label: '', link: '/' , icon: 'pi pi-fw pi-arrow-circle-left' },
           ]
         },
         {
@@ -292,51 +287,14 @@ export class NavbarBottomComponent {
     },
   ];
 
-  
-  
-  private hideSubsubitemsTimeout: any;
-
-  toggleSubsubitems(subsubitemLabel: string, subsubitem: Subsubitem) {
-    if (this.hideSubsubitemsTimeout) {
-      clearTimeout(this.hideSubsubitemsTimeout);
-    }
-    this.showSubitems[subsubitemLabel] = !this.showSubitems[subsubitemLabel];
-    this.hoveredSubitem = this.showSubitems[subsubitemLabel] ? subsubitem : null;
-
-    if (!this.showSubitems[subsubitemLabel]) {
-      this.hideSubsubitemsTimeout = setTimeout(() => {
-        this.hoveredSubitem = null;
-      }, 300);
-    }
-  }
-
-  toggleSubsubitemContainer(subsubitemLabel: string) {
-    this.showSubsubitemContainer[subsubitemLabel] = !this.showSubsubitemContainer[subsubitemLabel];
-  }
-
-  isSubsubitemActive(subsubitemLabel: string): boolean {
-    return this.hoveredSubitem !== null && this.hoveredSubitem.label === subsubitemLabel;
-  }
-  
-  setHoveredSubitem(subsubitem: Subsubitem) {
-    this.hoveredSubitem = subsubitem;
-  }
-  
-  toggleMenu() {
-    this.isMenuOpen = !this.isMenuOpen;
-  }
-
-  closeMenu() {
-    this.isMenuOpen = false;
-  }
-
   getSubsubsubitems(subsubitems: Subsubitem[]): Subsubitem[] {
     const result: Subsubitem[] = [];
     subsubitems.forEach(subsubitem => {
-      if (subsubitem.subsubitems) {
-        result.push(...subsubitem.subsubitems);
-      }
+        if (subsubitem.subsubitems) {
+            result.push(...subsubitem.subsubitems);
+        }
     });
     return result;
-  }
+}
+
 }

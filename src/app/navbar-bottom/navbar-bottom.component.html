@@ -1,11 +1,12 @@
 <header>
   <div class="menu">
-    <button pButton class="menu-button" type="button" (click)="toggleMenu()" aria-label="Toggle Menu">
+    <button pButton class="menu-button" type="button" aria-label="Toggle Menu">
       <i class="pi pi-bars"></i>&nbsp;القائمة
     </button>
   </div>
 
   <nav class="nav">
+
     <ng-container *ngFor="let menuItem of menuItems">
       <div class="mega-dropdown">
         <span class="keyword">{{ menuItem.label }}</span>
@@ -15,22 +16,21 @@
               <h2>{{ column.label }}</h2>
               <p-divider></p-divider>
               <ng-container *ngFor="let subsubitem of column.subsubitems">
-                <div class="subsubitem"
-                (mouseenter)="toggleSubsubitems(subsubitem.label, subsubitem)"
-                (mouseleave)="toggleSubsubitems(subsubitem.label, subsubitem)">
-                <a [routerLink]="subsubitem.link">
-                  <i *ngIf="subsubitem.icon" [ngClass]="subsubitem.icon"></i>
-                  <span>{{ subsubitem.label }}</span>
-                  <i *ngIf="subsubitem.subsubitems" class="pi pi-caret-down"></i>
-                </a>
-              </div>
-              
-
-                <div *ngIf="subsubitem.subsubitems && subsubitem.subsubitems.length > 0" class="subsubitem-container" [ngClass]="{'active': isSubsubitemActive(subsubitem.label)}">
-                  <i class="fas fa-chevron-down"></i>
-                  <ng-container *ngFor="let subsubsubitem of subsubitem.subsubitems">
-                    <a [routerLink]="subsubsubitem.link">&nbsp;{{ subsubsubitem.label }}</a>
-                  </ng-container>
+                <div class="subsubitem">
+                  <a [routerLink]="subsubitem.link">
+                    <i *ngIf="subsubitem.icon" [ngClass]="subsubitem.icon"></i>
+                    <span>{{ subsubitem.label }}</span>
+                    <i *ngIf="subsubitem.subsubitems" class="pi pi-caret-down"></i>
+                  </a>
+                  <div *ngIf="subsubitem.subsubitems && subsubitem.subsubitems.length > 0" class="subsubitem-container">
+                    <i class="fas fa-chevron-down"></i>
+                    <ng-container *ngFor="let subsubsubitem of subsubitem.subsubitems">
+                      <a [routerLink]="subsubsubitem.link">
+                        <i *ngIf="subsubsubitem.icon" [ngClass]="subsubsubitem.icon"></i>
+                        {{ subsubsubitem.label }}
+                      </a>
+                    </ng-container>
+                  </div>
                 </div>
               </ng-container>
             </div>
@@ -38,5 +38,6 @@
         </div>
       </div>
     </ng-container>
+
   </nav>
 </header>
