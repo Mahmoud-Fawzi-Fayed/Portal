@@ -20,13 +20,14 @@
                 <div class="subsubitem">
                   <a [routerLink]="subsubitem.link">
                     <i *ngIf="subsubitem.icon" [ngClass]="subsubitem.icon"></i>
+                    <i *ngIf="subsubitem.subsubitems" class="pi pi-fw pi-arrow-circle-left"></i>
                     <span>{{ subsubitem.label }}</span>
                     <i *ngIf="subsubitem.subsubitems" class="pi pi-caret-down"></i>
                   </a>
                   <div *ngIf="subsubitem.subsubitems && subsubitem.subsubitems.length > 0" class="subsubitem-container">
                     <i class="fas fa-chevron-down"></i>
                     <ng-container *ngFor="let subsubsubitem of subsubitem.subsubitems">
-                      <a [routerLink]="subsubsubitem.link">
+                      <a [routerLink]="subsubsubitem.link" >
                         <i *ngIf="subsubsubitem.icon" [ngClass]="subsubsubitem.icon"></i>
                         {{ subsubsubitem.label }}
                       </a>

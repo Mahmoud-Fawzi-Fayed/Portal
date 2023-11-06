@@ -50,8 +50,8 @@ export class NavbarBottomComponent {
           subsubitems: [
             {label: 'قطاع رئيس الجامعة', link: '/' , icon: 'pi pi-fw pi-arrow-circle-left' },
             {label: 'قطاع نائب شئون التعليم والطلاب', link: '/' , icon: 'pi pi-fw pi-arrow-circle-left' },
-            {label: 'قطاع نائب شئون خدمة المجتمع وتنمية البيئة', link: '/' , icon: 'pi pi-fw pi-arrow-circle-left' },
-            {label: 'قطاع نائب شئون الدراسات العٌليا والبحوث', link: '/' , icon: 'pi pi-fw pi-arrow-circle-left' },
+            {label: 'قطاع نائب شئون خدمة المجتمع', link: '/' , icon: 'pi pi-fw pi-arrow-circle-left' },
+            {label: 'قطاع نائب شئون الدراسات العٌليا', link: '/' , icon: 'pi pi-fw pi-arrow-circle-left' },
             {label: 'قطاع أمين عام الجامعة', link: '/' , icon: 'pi pi-fw pi-arrow-circle-left' }
           ]
         },
