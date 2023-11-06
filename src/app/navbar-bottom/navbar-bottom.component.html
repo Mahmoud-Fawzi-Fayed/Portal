@@ -9,12 +9,13 @@
 
     <ng-container *ngFor="let menuItem of menuItems">
       <div class="mega-dropdown">
-        <span class="keyword">{{ menuItem.label }}</span>
+        <span class="keyword" (click)="navigateTo(menuItem.label)">{{ menuItem.label }}</span>
         <div class="mega-dropdown-content">
           <ng-container *ngFor="let column of menuItem.columns">
             <div class="mega-column">
               <h2>{{ column.label }}</h2>
               <p-divider></p-divider>
+
               <ng-container *ngFor="let subsubitem of column.subsubitems">
                 <div class="subsubitem">
                   <a [routerLink]="subsubitem.link">

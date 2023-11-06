@@ -7,30 +7,32 @@ import { Component, OnInit } from '@angular/core';
 })
 
 export class NavbarTopComponent implements OnInit {
-    dynamicTextOptions: string[] = [
-      "مرحباً بكم فى جامعة المنوفية",
-      "منارة العلم في قلب الدلتا",
-      "منبع القادة وأصحاب الفكر",
-      ];
-      selectedLanguages: string[] = ['ar'];
-    languageOptions = [
-      { label: 'AR', value: 'ar' },
-      { label: 'EN', value: 'en' },
-      { label: 'FR', value: 'fr' }
+  dynamicTextOptions: string[] = [
+    "مرحباً بكم فى جامعة المنوفية",
+    "منارة العلم في قلب الدلتا",
+    "منبع القادة وأصحاب الفكر",
+  ];
 
-    ];
-  
-    dynamicText: string = this.dynamicTextOptions[0];
-  
-    constructor() { }
-  
-    ngOnInit(): void {
-      setInterval(() => this.updateDynamicText(), 2000);
-    }
-  
-    updateDynamicText() {
-      const currentIndex = this.dynamicTextOptions.indexOf(this.dynamicText);
-      const nextIndex = (currentIndex + 1) % this.dynamicTextOptions.length;
-      this.dynamicText = this.dynamicTextOptions[nextIndex];
-    }
+  selectedLanguages: string;
+  languageOptions = [
+    { label: 'AR', value: 'ar' },
+    { label: 'EN', value: 'en' },
+    { label: 'FR', value: 'fr' }
+  ];
+
+  dynamicText: string = this.dynamicTextOptions[0];
+
+  constructor() {
+    this.selectedLanguages = 'ar';
   }
+
+  ngOnInit(): void {
+    setInterval(() => this.updateDynamicText(), 2000);
+  }
+
+  updateDynamicText() {
+    const currentIndex = this.dynamicTextOptions.indexOf(this.dynamicText);
+    const nextIndex = (currentIndex + 1) % this.dynamicTextOptions.length;
+    this.dynamicText = this.dynamicTextOptions[nextIndex];
+  }
+}

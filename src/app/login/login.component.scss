@@ -21,9 +21,9 @@ body {
   justify-content:space-evenly;
   align-items: center;
   width: 100%;
-  max-width: 1350px;
+  max-width: 1300px;
   padding: 0 20px;
-  margin-top: 300px;
+  margin-top: 100px;
 }
 
 .login-container {
@@ -32,7 +32,7 @@ body {
   border: 1px solid #ccc;
   border-radius: 20px;
   background-color: rgba(255, 255, 255, 0.358);
-  box-shadow: 0 2px 4px rgba(0, 128, 0, 0.6);
+  box-shadow: 0 2px 4px rgba(128, 0, 0, 0.626);
   max-width: 400px;
   flex: 1;
 }

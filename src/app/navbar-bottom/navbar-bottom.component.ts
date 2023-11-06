@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 
 interface Subsubitem {
   label: string;
@@ -25,6 +26,14 @@ interface MenuItem {
 })
 export class NavbarBottomComponent {
 
+  constructor(private router: Router) { }
+
+  navigateTo(label: string) {
+    if (label === 'الرئيسية') {
+      this.router.navigate(['/']);
+    }
+  }
+  
   menuItems: MenuItem[] = [
 
     {
