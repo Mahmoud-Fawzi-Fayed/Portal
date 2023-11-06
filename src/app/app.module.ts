@@ -15,6 +15,7 @@ import { LoginComponent } from './login/login.component';
 import { NavbarBottomComponent } from './navbar-bottom/navbar-bottom.component';
 import { NavbarTopComponent } from './navbar-top/navbar-top.component';
 import { StudentDetailsComponent } from './student-details/student-details.component';
+import { NewsComponent } from './news/news.component';
 
 @NgModule({
   declarations: [
@@ -24,6 +25,7 @@ import { StudentDetailsComponent } from './student-details/student-details.compo
     NavbarBottomComponent,
     LoginComponent,
     StudentDetailsComponent,
+    NewsComponent,
   ],
   imports: [
     BrowserModule,
