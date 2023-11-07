@@ -108,3 +108,12 @@ width: 450px;
   border: none;
   border-radius: 15px;
 }
+
+.fixed {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 9999;
+  display: none;
+}

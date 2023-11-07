@@ -1,4 +1,4 @@
-import { Component, OnInit, NgZone } from '@angular/core';
+import { Component, OnInit, NgZone, HostListener } from '@angular/core';
 
 @Component({
   selector: 'app-navbar-top',
@@ -7,6 +7,22 @@ import { Component, OnInit, NgZone } from '@angular/core';
 })
 
 export class NavbarTopComponent implements OnInit {
+  isFixed: boolean = false;
+
+
+  @HostListener('window:scroll', ['$event'])
+  onScroll(_event: Event): void {
+    const scrollPosition = window.scrollY || document.documentElement.scrollTop;
+
+    const threshold = 100;
+
+    if (scrollPosition > threshold) {
+      this.isFixed = true;
+    } else {
+      this.isFixed = false;
+    }
+  }
+  
   dynamicTextOptions: string[] = [
     "مرحباً بكم فى جامعة المنوفية",
     "منارة العلم في قلب الدلتا",

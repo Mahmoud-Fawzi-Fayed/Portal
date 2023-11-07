@@ -15,11 +15,11 @@
 *{
     font-family: 'Almarai';
     text-decoration: none;
-    text-align: center;
 }
 
 body{
-  direction: rtl;
+    direction: rtl;
+    text-align: center;
 }
 
 .page-container {
@@ -30,11 +30,11 @@ body{
     height: 100vh;
     overflow: hidden;
     img{
-      position: absolute;
-      background-image: url('/assets/images/university.jpg');
-      background-size: cover;
-      background-position: center;
-      height: 100vh;
+        position: absolute;
+        background-image: url('/assets/images/university.jpg');
+        background-size: cover;
+        background-position: center;
+        height: 100vh;
     }
 }
 
@@ -52,8 +52,6 @@ body{
     transition: transform 0.5s ease-in-out;
     overflow: hidden;
 }
-
-
 
 .slide.active {
     opacity: 1;
@@ -105,7 +103,7 @@ img {
 .text-container {
     text-align: center;
     padding: 10px;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.6);
     border-radius: 10px;
     color: white;
     font-weight:lighter;
@@ -117,14 +115,14 @@ img {
     }
 }
 
-h1 {
-    font-size: 28px;
-}
 
 .main-section {
-    padding: 20px;
+    padding: 6px 20px;
+    text-align: center;
 
-
+    h1{
+        font-size: 30px;
+    }
 
     .table {
         display: flex;
@@ -188,7 +186,8 @@ p-card {
 
 .news{
     h1{
-        font-size:38px;
+        font-size:30px;
+        text-align: center;
     }
     a{
         &:hover {
@@ -300,7 +299,8 @@ p-button {
         font-weight: 700;
         margin-top: 30px;
     h1 {
-        font-size: 16px;
+        font-size:30px;
+        text-align: center;
     }
 
     p {
@@ -309,7 +309,8 @@ p-button {
     }
 
     h1 {
-        font-size: 20px;
+        font-size:30px;
+        text-align: center;
     }
 
     p-divider {
