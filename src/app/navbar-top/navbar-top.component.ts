@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, NgZone } from '@angular/core';
 
 @Component({
   selector: 'app-navbar-top',
@@ -20,19 +20,53 @@ export class NavbarTopComponent implements OnInit {
     { label: 'FR', value: 'fr' }
   ];
 
-  dynamicText: string = this.dynamicTextOptions[0];
+  dynamicText: string = '';
+  currentIndex: number = 0;
 
-  constructor() {
+  ngOnInit() {
+    this.typeNextText();
+  }
+
+  constructor(private zone: NgZone) {
     this.selectedLanguages = 'ar';
   }
 
-  ngOnInit(): void {
-    setInterval(() => this.updateDynamicText(), 2000);
-  }
+  typeNextText() {
+    if (this.currentIndex < this.dynamicTextOptions.length) {
+      const currentText = this.dynamicTextOptions[this.currentIndex];
+      const typingDelay = 100;
+      const erasingDelay = 50;
 
-  updateDynamicText() {
-    const currentIndex = this.dynamicTextOptions.indexOf(this.dynamicText);
-    const nextIndex = (currentIndex + 1) % this.dynamicTextOptions.length;
-    this.dynamicText = this.dynamicTextOptions[nextIndex];
+      this.zone.run(() => {
+        let i = 0;
+        const intervalId = setInterval(() => {
+          if (i < currentText.length) {
+            this.dynamicText = currentText.substr(0, i + 1);
+          } else {
+            clearInterval(intervalId);
+            setTimeout(() => {
+              let j = currentText.length;
+              const eraseIntervalId = setInterval(() => {
+                if (j > 0) {
+                  this.dynamicText = currentText.substr(0, j - 1);
+                } else {
+                  clearInterval(eraseIntervalId);
+                  this.currentIndex++;
+                  setTimeout(() => {
+                    this.dynamicText = '';
+                    this.typeNextText();
+                  }, 1000);
+                }
+                j--;
+              }, erasingDelay);
+            }, 1000);
+          }
+          i++;
+        }, typingDelay);
+      });
+    } else {
+      this.currentIndex = 0;
+      this.typeNextText();
+    }
   }
 }

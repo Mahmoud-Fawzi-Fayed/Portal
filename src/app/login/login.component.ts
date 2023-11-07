@@ -53,7 +53,6 @@ export class LoginComponent {
       );
 
       if (matchingStudent) {
-        console.log('Matching Student:', matchingStudent);
         this.authService.login(matchingStudent);
         console.log('Login successful!');
       } else {
