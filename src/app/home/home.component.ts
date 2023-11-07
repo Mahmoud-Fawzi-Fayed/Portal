@@ -74,5 +74,36 @@ export class HomeComponent {
       numScroll: 1
     }
   ];
+
+  cardRows = [
+    [
+      { image: 'assets/images/medicine.jpg', link: 'https://faculty1.example.com', name: 'كلية الطب' },
+      { image: 'assets/images/ai.png', link: 'https://faculty1.example.com', name: 'كلية الذكاء الاصطناعي' },
+      { image: 'assets/images/computers.jpg', link: 'https://faculty1.example.com', name: 'كلية الحاسبات والمعلومات' },
+      { image: 'assets/images/education.png', link: 'https://faculty1.example.com', name: 'كلية التربية' },
+      { image: 'assets/images/engineering.png', link: 'https://faculty1.example.com', name: 'كلية الهندسة' },
+    ],
+    [
+      { image: 'assets/images/literature.jpg', link: 'https://faculty1.example.com', name: 'كلية الآداب' },
+      { image: 'assets/images/nursing.jpg', link: 'https://faculty1.example.com', name: 'كلية التمريض' },
+      { image: 'assets/images/pharmacy.jpg', link: 'https://faculty1.example.com', name: 'كلية الصيدلة' },
+      { image: 'assets/images/vet.png', link: 'https://faculty1.example.com', name: 'كلية الطب البيطري' },
+      { image: 'assets/images/commerce.png', link: 'https://faculty1.example.com', name: 'كلية التجارة' },
+    ],
+    [
+      { image: 'assets/images/education_kids.jpg', link: 'https://faculty1.example.com', name: 'كلية التربية للطفولة المبكرة' },
+      { image: 'assets/images/laws.jpg', link: 'https://faculty1.example.com', name: 'كليةالحقوق' },
+      { image: 'assets/images/mass.jpg', link: 'https://faculty1.example.com', name: 'كلية الإعلام' },
+      { image: 'assets/images/physical_education.png', link: 'https://faculty1.example.com', name: 'كلية التربية الرياضية' },
+      { image: 'assets/images/agriculture.jpg', link: 'https://faculty1.example.com', name: 'كلية الزراعة' },
+    ],
+    [
+      { image: 'assets/images/dentistry.png', link: 'https://faculty1.example.com', name: 'كلية طب الأسنان' },
+      { image: 'assets/images/menof.png', link: 'https://faculty1.example.com', name: 'كلية الهندسة الإلكترونية' },
+      { image: 'assets/images/economics.png', link: 'https://faculty1.example.com', name: 'كلية الاقتصاد المنزلي' },
+      { image: 'assets/images/applied_health.jpg', link: 'https://faculty1.example.com', name: 'كلية تكنولوجيا العلوم التطبيقية' },
+      { image: 'assets/images/science.jpg', link: 'https://faculty1.example.com', name: 'كلية العلوم' },
+    ],
+  ];
 }
 

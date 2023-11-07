@@ -1,6 +1,7 @@
 
 <div class="home-container">
     <div class="background-image">
+    </div>
     
     <div class="carousel-container">
       <p-carousel [value]="highlights" [numVisible]="3" [numScroll]="3" [circular]="true" [responsiveOptions]="responsiveOptions" [autoplayInterval]="3000">
@@ -21,7 +22,19 @@
         </ng-template>
       </p-carousel>  
     </div>
-  </div>
-</div>
-  
+
+    
+    <h1>كليات الجامعة</h1>
+    <section class="card-container">
+      <div class="card-row" *ngFor="let row of cardRows">
+        <div class="circular-card" *ngFor="let card of row">
+          <a [href]="card.link" target="_blank">
+            <img [src]="card.image" alt="Card Image">
+            <div class="message-box">{{ card.name }}</div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+  </div>  
 <app-footer></app-footer>
