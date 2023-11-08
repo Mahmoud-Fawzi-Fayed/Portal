@@ -6,6 +6,103 @@ import { Component } from '@angular/core';
   styleUrls: ['./home.component.scss']
 })
 export class HomeComponent {
-  
-}
+  highlights = [
+    {
+      image: 'assets/images/placeholder.jpg',
+      title: 'جامعة المنوفية تختتم المهرجان الثقافى وتعلن الكليات الفائزة في مسابقات الدورى الثقافى ومجلات الحائط والشعر',
+      date: '2023-11-02',
+      description: 'تحت رعاية الدكتور احمد القاصد رئيس الجامعة......',
+    },
+    {
+      image: 'assets/images/placeholder.jpg',
+      title: 'رئيس جامعة المنوفية يلتقي رئيس محكمة شبين الكوم الكلية والمحامي العام لنيابات المنوفية',
+      date: '2023-11-01',
+      description: 'التقي الدكتور أحمد القاصد رئيس جامعة المنوفية..........',
+    },
+    {
+      image: 'assets/images/placeholder.jpg',
+      title: 'جامعة المنوفية تحرز تقدما جديدا في تصنيف شنغهاي لعام ٢٠٢٣',
+      date: '2023-11-01',
+      description: 'أعلن الدكتور أحمد القاصد رئيس جامعة المنوفية......',
+    },
+    {
+      image: 'assets/images/placeholder.jpg',
+      title: 'رئيس جامعة المنوفية يستهل الاجتماع الدورى لمجلس الجامعة بالوقوف دقيقة حداد على أرواح شهداء غزه',
+      date: '2023-10-31',
+      description: 'ويؤكد دعم المجلس لقرارات رئيس الجمهورية ويكرم عميد طب الأسنان السابق...........',
+    },
+    {
+      image: 'assets/images/placeholder.jpg',
+      title: 'مؤتمر بعنوان "المستقبل الاخضر والتوجه نحو التحول لجامعه صديقه للبيئه"',
+      date: '2023-08-24',
+      description: 'ينظم قطاع خدمه المجتمع وتنميه البيئة المؤتمرالسنوى بعنوان',
+    },
+    {
+      image: 'assets/images/placeholder.jpg',
+      title: 'القاصد يؤكد :زيارات للمستشفيـات الجامعـيـة ووحدات جامعة المنوفية المختلفة لتقديم خدمات للطلاب والمجتمع بجودةعالية',
+      date: '2023-01-26',
+      description: 'أكد الدكتور أحمد القاصد رئيس جامعة المنوفية.....',
+    },
+    {
+      image: 'assets/images/placeholder.jpg',
+      title: 'شرف يفتتح فعاليات اليوم الوطني البيئي بالاقتصاد المنزلي',
+      date: '2023-01-25',
+      description: 'تحت رعاية الدكتور أحمد القاصد رئيس جامعة المنوفية........',
+    },
+    {
+      image: 'assets/images/placeholder.jpg',
+      title: 'زراعة المنوفية تناقش التحديات الأمنية والتنموية للأمن المائي المصري',
+      date: '2023-01-25',
+      description: 'زراعة المنوفية تناقش التحديات الأمنية والتنموية للأمن المائي المصري',
+    },
+  ];
 
+  responsiveOptions: any[] = [
+    {
+      breakpoint: '1024px',
+      numVisible: 3,
+      numScroll: 3
+    },
+    {
+      breakpoint: '768px',
+      numVisible: 2,
+      numScroll: 2
+    },
+    {
+      breakpoint: '375px',
+      numVisible: 1,
+      numScroll: 1
+    }
+  ];
+
+  cardRows = [
+    [
+      { image: 'assets/images/medicine.jpg', link: 'https://faculty1.example.com', name: 'كلية الطب' },
+      { image: 'assets/images/ai.png', link: 'https://faculty1.example.com', name: 'كلية الذكاء الاصطناعي' },
+      { image: 'assets/images/computers.jpg', link: 'https://faculty1.example.com', name: 'كلية الحاسبات والمعلومات' },
+      { image: 'assets/images/education.png', link: 'https://faculty1.example.com', name: 'كلية التربية' },
+      { image: 'assets/images/engineering.png', link: 'https://faculty1.example.com', name: 'كلية الهندسة' },
+    ],
+    [
+      { image: 'assets/images/literature.jpg', link: 'https://faculty1.example.com', name: 'كلية الآداب' },
+      { image: 'assets/images/nursing.jpg', link: 'https://faculty1.example.com', name: 'كلية التمريض' },
+      { image: 'assets/images/pharmacy.jpg', link: 'https://faculty1.example.com', name: 'كلية الصيدلة' },
+      { image: 'assets/images/vet.png', link: 'https://faculty1.example.com', name: 'كلية الطب البيطري' },
+      { image: 'assets/images/commerce.png', link: 'https://faculty1.example.com', name: 'كلية التجارة' },
+    ],
+    [
+      { image: 'assets/images/education_kids.jpg', link: 'https://faculty1.example.com', name: 'كلية التربية للطفولة المبكرة' },
+      { image: 'assets/images/laws.jpg', link: 'https://faculty1.example.com', name: 'كليةالحقوق' },
+      { image: 'assets/images/mass.jpg', link: 'https://faculty1.example.com', name: 'كلية الإعلام' },
+      { image: 'assets/images/physical_education.png', link: 'https://faculty1.example.com', name: 'كلية التربية الرياضية' },
+      { image: 'assets/images/agriculture.jpg', link: 'https://faculty1.example.com', name: 'كلية الزراعة' },
+    ],
+    [
+      { image: 'assets/images/dentistry.png', link: 'https://faculty1.example.com', name: 'كلية طب الأسنان' },
+      { image: 'assets/images/menof.png', link: 'https://faculty1.example.com', name: 'كلية الهندسة الإلكترونية' },
+      { image: 'assets/images/economics.png', link: 'https://faculty1.example.com', name: 'كلية الاقتصاد المنزلي' },
+      { image: 'assets/images/applied_health.jpg', link: 'https://faculty1.example.com', name: 'كلية تكنولوجيا العلوم التطبيقية' },
+      { image: 'assets/images/science.jpg', link: 'https://faculty1.example.com', name: 'كلية العلوم' },
+    ],
+  ];
+}

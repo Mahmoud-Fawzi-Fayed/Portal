@@ -107,46 +107,62 @@
   </div>
   <p-button routerLink="./news">معرفة المزيد من الاخبار</p-button>
 
-  <p-divider></p-divider>
+  
+</section>
 
-  <section class="pe-section">
-    <h1>القيادات الحالية للجامعة</h1>
-    <div class="table">
-      <div class="colum">
-        <!-- <i class="pi pi-server"></i> -->
-        <img
-          src="../../assets/images/drSobhy.jpg"
-        />
-        <div class="prg">
-          <h5>أ.د/ صبحي شرف</h5>
-          <p>نائب رئيس الجامعة لشؤون خدمة المجتمع </p>
-        </div>
-      </div>
+<p-divider></p-divider>
 
-      <div class="colum">
-        <img
-          src="../../assets/images/drKased.png"
-        />
-        <div class="prg">
-          <h5>أ.د/ أحمد فرج القاصد</h5>
-          <p>رئيس الجامعة</p>
-        </div>
-        <!-- </a> -->
-      </div>
-
-      <div class="colum">
-        <img
-          src="../../assets/images/drhazem.jpg"
-        />
-        <div class="prg">
-          <h5>أ.د/ حازم صالح</h5>
-          <p>نائب رئيس الجامعة للدراسات العليا والبحوث</p>
-        </div>
+<section class="pe-section">
+  <h1>القيادات الحالية للجامعة</h1>
+  <div class="table">
+    <div class="colum">
+      <!-- <i class="pi pi-server"></i> -->
+      <img
+        src="../../assets/images/drSobhy.jpg"
+      />
+      <div class="prg">
+        <h5>أ.د/ صبحي شرف</h5>
+        <p>نائب رئيس الجامعة لشؤون خدمة المجتمع </p>
       </div>
     </div>
 
-    <p-divider></p-divider>
+    <div class="colum">
+      <img
+        src="../../assets/images/drKased.png"
+      />
+      <div class="prg">
+        <h5>أ.د/ أحمد فرج القاصد</h5>
+        <p>رئيس الجامعة</p>
+      </div>
+      <!-- </a> -->
+    </div>
 
-  </section>
+    <div class="colum">
+      <img
+        src="../../assets/images/drhazem.jpg"
+      />
+      <div class="prg">
+        <h5>أ.د/ حازم صالح</h5>
+        <p>نائب رئيس الجامعة للدراسات العليا والبحوث</p>
+      </div>
+    </div>
+  </div>
+
+  
 </section>
+<p-divider></p-divider>
+
+<h1>كليات الجامعة</h1>
+<section class="card-container">
+  <div class="card-row" *ngFor="let row of cardRows">
+    <div class="circular-card" *ngFor="let card of row">
+      <a [href]="card.link" target="_blank">
+        <img [src]="card.image" alt="Card Image">
+        <div class="message-box">{{ card.name }}</div>
+      </a>
+    </div>
+  </div>
+</section>
+
+
 <app-footer></app-footer>
