@@ -77,9 +77,9 @@ export class HomeComponent {
   ];
 
   cardRows = [
-    [{ image: 'assets/images/medicine.jpg', link: '#', name: 'كلية الطب' }],
-    [{ image: 'assets/images/ai.png', link: '#', name: 'كلية الذكاء الاصطناعي' }],
-    [{ image: 'assets/images/computers.jpg', link: '#', name: 'كلية الحاسبات والمعلومات' }],
+    [{ image: 'assets/images/medicine.jpg', link: 'http://mu.menofia.edu.eg/med/Home/ar', name: 'كلية الطب' }],
+    [{ image: 'assets/images/ai.png', link: 'https://mufaiportal.web.app/', name: 'كلية الذكاء الاصطناعي' }],
+    [{ image: 'assets/images/computers.jpg', link: 'https://www.menofia.edu.eg/fci/Home/ar', name: 'كلية الحاسبات والمعلومات' }],
     [{ image: 'assets/images/education.png', link: '#', name: 'كلية التربية' }],
     [{ image: 'assets/images/engineering.png', link: '#', name: 'كلية الهندسة' }],
     [{ image: 'assets/images/literature.jpg', link: '#', name: 'كلية الآداب' }],
