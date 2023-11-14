@@ -16,6 +16,9 @@ import { NavbarBottomComponent } from './navbar-bottom/navbar-bottom.component';
 import { NavbarTopComponent } from './navbar-top/navbar-top.component';
 import { StudentDetailsComponent } from './student-details/student-details.component';
 import { FooterComponent } from './footer/footer.component';
+import { ClassificationDrawingsComponent } from './classification-chart/classification-drawings.component';
+import { CanvasJSAngularChartsModule } from '@canvasjs/angular-charts';
+
 
 @NgModule({
   declarations: [
@@ -26,6 +29,7 @@ import { FooterComponent } from './footer/footer.component';
     LoginComponent,
     StudentDetailsComponent,
     FooterComponent,
+    ClassificationDrawingsComponent,
   ],
   imports: [
     BrowserModule,
@@ -39,6 +43,8 @@ import { FooterComponent } from './footer/footer.component';
     ReactiveFormsModule,
     HttpClientModule,
     SelectButtonModule,
+    CanvasJSAngularChartsModule,
+
   ],
   providers: [],
   bootstrap: [AppComponent],

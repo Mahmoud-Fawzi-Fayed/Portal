@@ -1,0 +1,22 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .text-container {
+        width: 35%;
+        text-align: center;
+        padding: 20px;
+        p{
+            direction: rtl;
+            font-size: 24px;
+            font-weight: 700;
+            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+    }
+
+    .chart-container {
+        width: 65%;
+        height: 400px;
+    }
+}

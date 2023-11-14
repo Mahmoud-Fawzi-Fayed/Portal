@@ -272,24 +272,14 @@ export class NavbarBottomComponent {
     },
 
     {
-      label: 'أخرى',
+      label: 'الخدمات',
       columns: [
         {
           label: '',
           subsubitems: [
-            {
-              label: 'الإعلام الجامعي',
-              subsubitems: [
-                {label: 'قناة الجامعة على YouTube', link: '/' , icon: 'pi pi-fw pi-arrow-circle-left' },
-                {label: 'نشرات الجامعة', link: '/' , icon: 'pi pi-fw pi-arrow-circle-left' },
-                {label: 'جامعة المنوفية على الشاشة الصغيرة', link: '/' , icon: 'pi pi-fw pi-arrow-circle-left' },
-                {label: ' جامعة المنوفية فى عيون الصحافة', link: '/' , icon: 'pi pi-fw pi-arrow-circle-left' },
-              ]
-            },
-            {label: 'مؤتمر التحول نحو الأخضر', link: '/' , icon: 'pi pi-fw pi-arrow-circle-left' },
-            {label: 'المتدربين', link: '/' , icon: 'pi pi-fw pi-arrow-circle-left' },
-            {label: 'التحول الرقمي', link: '/' , icon: 'pi pi-fw pi-arrow-circle-left' },
-            {label: 'أرشيف الأخبار', link: '/' , icon: 'pi pi-fw pi-arrow-circle-left' },
+            {label: 'تصنيف الجامعة', link: '/' , icon: 'pi pi-fw pi-arrow-circle-left' },
+            {label: 'الحصول على الايميل الاكاديمي', link: '/' , icon: 'pi pi-fw pi-arrow-circle-left' },
+            {label: 'منصة بن الهيثم', link: '/' , icon: 'pi pi-fw pi-arrow-circle-left' },
           ]
         },
       ]
