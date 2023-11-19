@@ -18,6 +18,7 @@ import { StudentDetailsComponent } from './student-details/student-details.compo
 import { FooterComponent } from './footer/footer.component';
 import { ClassificationDrawingsComponent } from './classification-chart/classification-drawings.component';
 import { CanvasJSAngularChartsModule } from '@canvasjs/angular-charts';
+import { VisionComponent } from './vision/vision.component';
 
 
 @NgModule({
@@ -30,6 +31,7 @@ import { CanvasJSAngularChartsModule } from '@canvasjs/angular-charts';
     StudentDetailsComponent,
     FooterComponent,
     ClassificationDrawingsComponent,
+    VisionComponent,
   ],
   imports: [
     BrowserModule,

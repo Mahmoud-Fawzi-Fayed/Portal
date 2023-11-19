@@ -277,7 +277,7 @@ export class NavbarBottomComponent {
         {
           label: '',
           subsubitems: [
-            {label: 'تصنيف الجامعة', link: '/' , icon: 'pi pi-fw pi-arrow-circle-left' },
+            {label: 'تصنيف الجامعة', link: '/Vision' , icon: 'pi pi-fw pi-arrow-circle-left' },
             {label: 'الحصول على الايميل الاكاديمي', link: '/' , icon: 'pi pi-fw pi-arrow-circle-left' },
             {label: 'منصة بن الهيثم', link: '/' , icon: 'pi pi-fw pi-arrow-circle-left' },
           ]

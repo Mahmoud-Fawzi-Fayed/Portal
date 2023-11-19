@@ -5,6 +5,7 @@ import { NavbarTopComponent } from './navbar-top/navbar-top.component';
 import { NavbarBottomComponent } from './navbar-bottom/navbar-bottom.component';
 import { LoginComponent } from './login/login.component';
 import { StudentDetailsComponent } from './student-details/student-details.component';
+import { VisionComponent} from './vision/vision.component'
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
@@ -13,6 +14,7 @@ const routes: Routes = [
   { path: 'navbar-bottom', component: NavbarBottomComponent },
   { path: 'login', component: LoginComponent },
   { path: 'student-details', component: StudentDetailsComponent },
+  { path: 'Vision', component: VisionComponent },
 ];
 
 
