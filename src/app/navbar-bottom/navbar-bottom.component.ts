@@ -25,9 +25,11 @@ interface MenuItem {
   styleUrls: ['./navbar-bottom.component.scss']
 })
 export class NavbarBottomComponent {
-
+  
+  
   constructor(private router: Router) { }
-
+  
+  
   navigateTo(label: string) {
     if (label === 'الرئيسية') {
       this.router.navigate(['/']);
@@ -278,8 +280,8 @@ export class NavbarBottomComponent {
           label: '',
           subsubitems: [
             {label: 'تصنيف الجامعة', link: '/Vision' , icon: 'pi pi-fw pi-arrow-circle-left' },
-            {label: 'الحصول على الايميل الاكاديمي', link: '/' , icon: 'pi pi-fw pi-arrow-circle-left' },
-            {label: 'منصة بن الهيثم', link: '/' , icon: 'pi pi-fw pi-arrow-circle-left' },
+            {label: 'الحصول على الايميل الاكاديمي', link: '/get_mail' , icon: 'pi pi-fw pi-arrow-circle-left' },
+            {label: 'منصة بن الهيثم', link: 'https://stdch.menofia.education/static/index.html' , icon: 'pi pi-fw pi-arrow-circle-left' },
           ]
         },
       ]
@@ -294,6 +296,11 @@ export class NavbarBottomComponent {
         }
     });
     return result;
+}
+
+
+isExternalLink(subsubitem: Subsubitem): boolean {
+  return !!subsubitem.link && typeof subsubitem.link === 'string' && subsubitem.link.startsWith('http');
 }
 
 }

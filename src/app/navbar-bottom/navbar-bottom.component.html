@@ -18,7 +18,7 @@
 
               <ng-container *ngFor="let subsubitem of column.subsubitems">
                 <div class="subsubitem">
-                  <a [routerLink]="subsubitem.link">
+                  <a [routerLink]="isExternalLink(subsubitem) ? null : subsubitem.link" [href]="isExternalLink(subsubitem) ? subsubitem.link : null" target="_blank" rel="noopener noreferrer">
                     <i *ngIf="subsubitem.icon" [ngClass]="subsubitem.icon"></i>
                     <i *ngIf="subsubitem.subsubitems" class="pi pi-fw pi-arrow-circle-left"></i>
                     <span>{{ subsubitem.label }}</span>
@@ -35,6 +35,7 @@
                   </div>
                 </div>
               </ng-container>
+              
             </div>
           </ng-container>
         </div>

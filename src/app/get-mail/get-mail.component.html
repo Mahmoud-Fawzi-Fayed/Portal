@@ -1,0 +1,19 @@
+<div class="container">
+    <form [formGroup]="loginForm" (ngSubmit)="onSubmit()" class="form">
+      <h3><i class="fas fa-envelope"></i> الحصول على الايميل الاكاديمي</h3>
+      <div>
+        <label for="id"><i class="fas fa-id-card"></i> الرقم القومي:</label>
+        <input type="id" id="id" formControlName="id" required />
+      </div>
+      <div *ngIf="loginForm.hasError('emptyFields')">
+        <i class="fas fa-exclamation-circle"></i> Please fill in all fields.
+      </div>
+      <div *ngIf="loginForm.hasError('incorrectCredentials')">
+        <i class="fas fa-times-circle"></i> تأكد من الرقم القومي
+      </div>
+      <button type="submit"><i class="fas fa-check"></i> Submit</button>
+      <div *ngIf="matchingStudent" class="result">
+        <p><i class="fas fa-envelope"></i> الايميل الاكاديمي: {{ matchingStudent['بريد النظام'] }}</p>
+      </div>
+    </form>
+  </div>

@@ -19,6 +19,7 @@ import { FooterComponent } from './footer/footer.component';
 import { ClassificationDrawingsComponent } from './classification-chart/classification-drawings.component';
 import { CanvasJSAngularChartsModule } from '@canvasjs/angular-charts';
 import { VisionComponent } from './vision/vision.component';
+import { GetMailComponent } from './get-mail/get-mail.component';
 
 
 @NgModule({
@@ -32,6 +33,7 @@ import { VisionComponent } from './vision/vision.component';
     FooterComponent,
     ClassificationDrawingsComponent,
     VisionComponent,
+    GetMailComponent,
   ],
   imports: [
     BrowserModule,

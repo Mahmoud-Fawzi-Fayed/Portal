@@ -6,6 +6,7 @@ import { NavbarBottomComponent } from './navbar-bottom/navbar-bottom.component';
 import { LoginComponent } from './login/login.component';
 import { StudentDetailsComponent } from './student-details/student-details.component';
 import { VisionComponent} from './vision/vision.component'
+import { GetMailComponent } from './get-mail/get-mail.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
@@ -15,8 +16,8 @@ const routes: Routes = [
   { path: 'login', component: LoginComponent },
   { path: 'student-details', component: StudentDetailsComponent },
   { path: 'Vision', component: VisionComponent },
+  { path: 'get_mail', component: GetMailComponent },
 ];
-
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
