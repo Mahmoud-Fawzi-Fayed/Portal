@@ -298,9 +298,4 @@ export class NavbarBottomComponent {
     return result;
 }
 
-
-isExternalLink(subsubitem: Subsubitem): boolean {
-  return !!subsubitem.link && typeof subsubitem.link === 'string' && subsubitem.link.startsWith('http');
-}
-
 }
